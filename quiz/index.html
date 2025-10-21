@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App with Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Start Screen -->
+    <div class="start-screen" id="start-screen">
+      <h1>Welcome to the Web Quiz</h1>
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div class="quiz-container" id="quiz-container" style="display: none;">
+      <h2 id="greeting"></h2>
+      <div class="timer">⏱ Time Left: <span id="time">20</span>s</div>
+      <div id="question">Question text</div>
+      <div id="answer-buttons" class="btn-grid"></div>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div class="result-screen" id="result-screen" style="display: none;">
+      <h1>Quiz Completed </h1>
+      <p id="final-score"></p>
+      <button id="restart-btn">Restart</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
